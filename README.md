@@ -4,7 +4,8 @@
 
 ## Retrieving Data 
 ### Website Data
-- I scraped https://pokemondb.net/pokedex/all and uploaded the data to Firebase.
+- I scraped https://pokemondb.net/pokedex/all ~~and uploaded the data to Firebase.~~
+- Data is now locally stored in a JSON file so sensitive database info isn't stored in this repo
 ### Scraping Website
 - https://youtu.be/1YESse8DlUU?si=ryc7MjuN3uulg8We -> this videp helped me understand how to scrape a web page
 
