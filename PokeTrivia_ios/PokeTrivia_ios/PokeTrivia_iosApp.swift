@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let pokemon: [Pokemon] = load("pokemon_data.json")
+let pokemon: [Pokemon] = load("pokemon_dataV2.json")
 
 @main
 struct PokeTrivia_iosApp: App {
