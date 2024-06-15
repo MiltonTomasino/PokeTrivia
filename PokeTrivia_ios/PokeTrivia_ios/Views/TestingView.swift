@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TestingView: View {
-    @EnvironmentObject var dataManager: PokemonDB
+    @EnvironmentObject var dataManager: PokemonDatabase
     @State var array: [Pokemon] = []
     
     var body: some View {
@@ -21,7 +21,7 @@ struct TestingView: View {
                 }
             }
         }.onAppear{
-            array = dataManager.fetchPokemon()
+            array = dataManager.fetchPokemon(query: "SELECT * FROM Pokemon;")
         }
     }
 }

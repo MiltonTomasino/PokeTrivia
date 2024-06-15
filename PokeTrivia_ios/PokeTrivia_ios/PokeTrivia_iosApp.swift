@@ -13,12 +13,12 @@ let pokemon: [Pokemon] = load("pokemon_dataV2.json")
 @main
 struct PokeTrivia_iosApp: App {
     
-    @StateObject private var databaseManager = PokemonDB.shared
+    @StateObject private var PokemonDB = PokemonDatabase.shared
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(databaseManager)
+                .environmentObject(PokemonDB)
         }
     }
 }

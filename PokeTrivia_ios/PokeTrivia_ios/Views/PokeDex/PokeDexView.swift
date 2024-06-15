@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PokeDexView: View {
+//    @EnvironmentObject var PokemonDB: PokemonDatabase
     
     var filterSearch: [Pokemon] {
         if text.isEmpty {
