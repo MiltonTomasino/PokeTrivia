@@ -6,15 +6,19 @@
 //
 
 import SwiftUI
+import SQLite
 
 let pokemon: [Pokemon] = load("pokemon_dataV2.json")
 
 @main
 struct PokeTrivia_iosApp: App {
     
+    @StateObject private var databaseManager = PokemonDB.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(databaseManager)
         }
     }
 }

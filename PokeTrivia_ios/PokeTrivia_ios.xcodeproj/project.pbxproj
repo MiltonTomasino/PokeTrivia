@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A11DAEA2C1CCECE007C7387 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11DAE92C1CCECE007C7387 /* Database.swift */; };
+		6A11DAEE2C1CCFE0007C7387 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6A11DAED2C1CCFE0007C7387 /* SQLite */; };
+		6A11DAEF2C1CEC01007C7387 /* PokemonDB.db in Resources */ = {isa = PBXBuildFile; fileRef = 6A11DAEB2C1CCEDC007C7387 /* PokemonDB.db */; };
+		6AD6BD9B2C1D5964008EB98D /* TestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD6BD9A2C1D5964008EB98D /* TestingView.swift */; };
 		6AFBB2D12C0589B6002800C3 /* PokeTrivia_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFBB2D02C0589B6002800C3 /* PokeTrivia_iosApp.swift */; };
 		6AFBB2D32C0589B6002800C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFBB2D22C0589B6002800C3 /* ContentView.swift */; };
 		6AFBB2D52C0589B7002800C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AFBB2D42C0589B7002800C3 /* Assets.xcassets */; };
@@ -47,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A11DAE92C1CCECE007C7387 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		6A11DAEB2C1CCEDC007C7387 /* PokemonDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonDB.db; sourceTree = "<group>"; };
+		6AD6BD9A2C1D5964008EB98D /* TestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingView.swift; sourceTree = "<group>"; };
 		6AFBB2CD2C0589B6002800C3 /* PokeTrivia_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeTrivia_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFBB2D02C0589B6002800C3 /* PokeTrivia_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeTrivia_iosApp.swift; sourceTree = "<group>"; };
 		6AFBB2D22C0589B6002800C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A11DAEE2C1CCFE0007C7387 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +147,10 @@
 		6AFBB2FC2C058AFE002800C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6A11DAEB2C1CCEDC007C7387 /* PokemonDB.db */,
 				6AFBB3092C058CDC002800C3 /* PokemonData.swift */,
 				6AFBB3122C05A432002800C3 /* PokemonEnums.swift */,
+				6A11DAE92C1CCECE007C7387 /* Database.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,6 +165,7 @@
 				6AFBB2D22C0589B6002800C3 /* ContentView.swift */,
 				6AFBB2FF2C058B35002800C3 /* MainMenuView.swift */,
 				6AFBB3182C066609002800C3 /* ImageView.swift */,
+				6AD6BD9A2C1D5964008EB98D /* TestingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +217,9 @@
 			dependencies = (
 			);
 			name = PokeTrivia_ios;
+			packageProductDependencies = (
+				6A11DAED2C1CCFE0007C7387 /* SQLite */,
+			);
 			productName = PokeTrivia_ios;
 			productReference = 6AFBB2CD2C0589B6002800C3 /* PokeTrivia_ios.app */;
 			productType = "com.apple.product-type.application";
@@ -278,6 +292,9 @@
 				Base,
 			);
 			mainGroup = 6AFBB2C42C0589B6002800C3;
+			packageReferences = (
+				6A11DAEC2C1CCFE0007C7387 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = 6AFBB2CE2C0589B6002800C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A11DAEF2C1CEC01007C7387 /* PokemonDB.db in Resources */,
 				6AFBB2D82C0589B7002800C3 /* Preview Assets.xcassets in Resources */,
 				6AFFB1182C06F7C100909555 /* pokemon_dataV2.json in Resources */,
 				6AFBB2D52C0589B7002800C3 /* Assets.xcassets in Resources */,
@@ -324,9 +342,11 @@
 				6AFBB3192C066609002800C3 /* ImageView.swift in Sources */,
 				6AFBB3132C05A432002800C3 /* PokemonEnums.swift in Sources */,
 				6AFBB3082C058BE0002800C3 /* CheckerView.swift in Sources */,
+				6AD6BD9B2C1D5964008EB98D /* TestingView.swift in Sources */,
 				6AFBB30A2C058CDC002800C3 /* PokemonData.swift in Sources */,
 				6AFBB3232C069E46002800C3 /* StatCheckPokemonView.swift in Sources */,
 				6AFBB3002C058B35002800C3 /* MainMenuView.swift in Sources */,
+				6A11DAEA2C1CCECE007C7387 /* Database.swift in Sources */,
 				6AFBB3212C06973B002800C3 /* SearchBar.swift in Sources */,
 				6AFBB3112C05A3F1002800C3 /* DexEntryView.swift in Sources */,
 				6AFBB3042C058BBF002800C3 /* PokeGridView.swift in Sources */,
@@ -664,6 +684,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A11DAEC2C1CCFE0007C7387 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A11DAED2C1CCFE0007C7387 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A11DAEC2C1CCFE0007C7387 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6AFBB2C52C0589B6002800C3 /* Project object */;
 }
