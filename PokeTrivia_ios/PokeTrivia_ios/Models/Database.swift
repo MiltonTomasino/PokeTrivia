@@ -9,9 +9,9 @@ import Foundation
 import SQLite
 import Combine
 
-class PokemonDB: ObservableObject {
+class PokemonDatabase: ObservableObject {
     
-    static let shared = PokemonDB()
+    static let shared = PokemonDatabase()
     @Published var connection: Connection?
     
     private init() {
@@ -34,7 +34,7 @@ class PokemonDB: ObservableObject {
         }
     }
     
-    func fetchPokemon() -> [Pokemon]{
+    func fetchPokemon(query: String) -> [Pokemon]{
         
         var list: [Pokemon] = []
         
@@ -44,7 +44,6 @@ class PokemonDB: ObservableObject {
                 return list
             }
             
-            let query = "SELECT * FROM Pokemon;"
             for row in try success.prepare(query) {
                 if
                     let dn = row[1] as? Int64,
@@ -66,7 +65,6 @@ class PokemonDB: ObservableObject {
                     var form: String? = nil
                     
                     if let result = row[3] as? String {
-                        print("form is null for \(String(describing: name))")
                         form = result
                     }
                     var types: [String] = []

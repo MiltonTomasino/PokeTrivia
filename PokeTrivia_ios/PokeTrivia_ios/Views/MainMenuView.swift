@@ -37,11 +37,11 @@ struct MainMenuView: View {
                             
                         }
                         
-                        NavigationLink(destination: TestingView()) {
-                            Text("Testng View")
-                                .font(Font.custom("Ubuntu Sans Mono", size: 20))
-                            
-                        }
+//                        NavigationLink(destination: TestingView()) {
+//                            Text("Testng View")
+//                                .font(Font.custom("Ubuntu Sans Mono", size: 20))
+//                            
+//                        }
                     } header: {
                         Text("Main Menu")
                             .font(Font.custom("Ubuntu Sans Mono", size: 18))
