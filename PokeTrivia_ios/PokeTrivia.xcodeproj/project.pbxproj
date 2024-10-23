@@ -54,13 +54,13 @@
 		6A11DAE92C1CCECE007C7387 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		6A11DAEB2C1CCEDC007C7387 /* PokemonDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonDB.db; sourceTree = "<group>"; };
 		6AD6BD9A2C1D5964008EB98D /* TestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingView.swift; sourceTree = "<group>"; };
-		6AFBB2CD2C0589B6002800C3 /* PokeTrivia_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeTrivia_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFBB2CD2C0589B6002800C3 /* PokeTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFBB2D02C0589B6002800C3 /* PokeTrivia_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeTrivia_iosApp.swift; sourceTree = "<group>"; };
 		6AFBB2D22C0589B6002800C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6AFBB2D42C0589B7002800C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AFBB2D72C0589B7002800C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6AFBB2DD2C0589B8002800C3 /* PokeTrivia_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeTrivia_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AFBB2E72C0589B8002800C3 /* PokeTrivia_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeTrivia_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFBB2DD2C0589B8002800C3 /* PokeTriviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeTriviaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFBB2E72C0589B8002800C3 /* PokeTriviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeTriviaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFBB2FF2C058B35002800C3 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		6AFBB3032C058BBF002800C3 /* PokeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeGridView.swift; sourceTree = "<group>"; };
 		6AFBB3052C058BD5002800C3 /* PokeDexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexView.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		6AFBB2C42C0589B6002800C3 = {
 			isa = PBXGroup;
 			children = (
-				6AFBB2CF2C0589B6002800C3 /* PokeTrivia_ios */,
+				6AFBB2CF2C0589B6002800C3 /* PokeTrivia */,
 				6AFBB2CE2C0589B6002800C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,14 +116,14 @@
 		6AFBB2CE2C0589B6002800C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6AFBB2CD2C0589B6002800C3 /* PokeTrivia_ios.app */,
-				6AFBB2DD2C0589B8002800C3 /* PokeTrivia_iosTests.xctest */,
-				6AFBB2E72C0589B8002800C3 /* PokeTrivia_iosUITests.xctest */,
+				6AFBB2CD2C0589B6002800C3 /* PokeTrivia.app */,
+				6AFBB2DD2C0589B8002800C3 /* PokeTriviaTests.xctest */,
+				6AFBB2E72C0589B8002800C3 /* PokeTriviaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6AFBB2CF2C0589B6002800C3 /* PokeTrivia_ios */ = {
+		6AFBB2CF2C0589B6002800C3 /* PokeTrivia */ = {
 			isa = PBXGroup;
 			children = (
 				6AFFB1172C06F7C100909555 /* pokemon_dataV2.json */,
@@ -133,7 +133,7 @@
 				6AFBB2D42C0589B7002800C3 /* Assets.xcassets */,
 				6AFBB2D62C0589B7002800C3 /* Preview Content */,
 			);
-			path = PokeTrivia_ios;
+			path = PokeTrivia;
 			sourceTree = "<group>";
 		};
 		6AFBB2D62C0589B7002800C3 /* Preview Content */ = {
@@ -204,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6AFBB2CC2C0589B6002800C3 /* PokeTrivia_ios */ = {
+		6AFBB2CC2C0589B6002800C3 /* PokeTrivia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AFBB2F12C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTrivia_ios" */;
+			buildConfigurationList = 6AFBB2F12C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTrivia" */;
 			buildPhases = (
 				6AFBB2C92C0589B6002800C3 /* Sources */,
 				6AFBB2CA2C0589B6002800C3 /* Frameworks */,
@@ -216,17 +216,17 @@
 			);
 			dependencies = (
 			);
-			name = PokeTrivia_ios;
+			name = PokeTrivia;
 			packageProductDependencies = (
 				6A11DAED2C1CCFE0007C7387 /* SQLite */,
 			);
 			productName = PokeTrivia_ios;
-			productReference = 6AFBB2CD2C0589B6002800C3 /* PokeTrivia_ios.app */;
+			productReference = 6AFBB2CD2C0589B6002800C3 /* PokeTrivia.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6AFBB2DC2C0589B8002800C3 /* PokeTrivia_iosTests */ = {
+		6AFBB2DC2C0589B8002800C3 /* PokeTriviaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AFBB2F42C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTrivia_iosTests" */;
+			buildConfigurationList = 6AFBB2F42C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTriviaTests" */;
 			buildPhases = (
 				6AFBB2D92C0589B8002800C3 /* Sources */,
 				6AFBB2DA2C0589B8002800C3 /* Frameworks */,
@@ -237,14 +237,14 @@
 			dependencies = (
 				6AFBB2DF2C0589B8002800C3 /* PBXTargetDependency */,
 			);
-			name = PokeTrivia_iosTests;
+			name = PokeTriviaTests;
 			productName = PokeTrivia_iosTests;
-			productReference = 6AFBB2DD2C0589B8002800C3 /* PokeTrivia_iosTests.xctest */;
+			productReference = 6AFBB2DD2C0589B8002800C3 /* PokeTriviaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6AFBB2E62C0589B8002800C3 /* PokeTrivia_iosUITests */ = {
+		6AFBB2E62C0589B8002800C3 /* PokeTriviaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AFBB2F72C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTrivia_iosUITests" */;
+			buildConfigurationList = 6AFBB2F72C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTriviaUITests" */;
 			buildPhases = (
 				6AFBB2E32C0589B8002800C3 /* Sources */,
 				6AFBB2E42C0589B8002800C3 /* Frameworks */,
@@ -255,9 +255,9 @@
 			dependencies = (
 				6AFBB2E92C0589B8002800C3 /* PBXTargetDependency */,
 			);
-			name = PokeTrivia_iosUITests;
+			name = PokeTriviaUITests;
 			productName = PokeTrivia_iosUITests;
-			productReference = 6AFBB2E72C0589B8002800C3 /* PokeTrivia_iosUITests.xctest */;
+			productReference = 6AFBB2E72C0589B8002800C3 /* PokeTriviaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -283,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6AFBB2C82C0589B6002800C3 /* Build configuration list for PBXProject "PokeTrivia_ios" */;
+			buildConfigurationList = 6AFBB2C82C0589B6002800C3 /* Build configuration list for PBXProject "PokeTrivia" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -299,9 +299,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6AFBB2CC2C0589B6002800C3 /* PokeTrivia_ios */,
-				6AFBB2DC2C0589B8002800C3 /* PokeTrivia_iosTests */,
-				6AFBB2E62C0589B8002800C3 /* PokeTrivia_iosUITests */,
+				6AFBB2CC2C0589B6002800C3 /* PokeTrivia */,
+				6AFBB2DC2C0589B8002800C3 /* PokeTriviaTests */,
+				6AFBB2E62C0589B8002800C3 /* PokeTriviaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -380,12 +380,12 @@
 /* Begin PBXTargetDependency section */
 		6AFBB2DF2C0589B8002800C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6AFBB2CC2C0589B6002800C3 /* PokeTrivia_ios */;
+			target = 6AFBB2CC2C0589B6002800C3 /* PokeTrivia */;
 			targetProxy = 6AFBB2DE2C0589B8002800C3 /* PBXContainerItemProxy */;
 		};
 		6AFBB2E92C0589B8002800C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6AFBB2CC2C0589B6002800C3 /* PokeTrivia_ios */;
+			target = 6AFBB2CC2C0589B6002800C3 /* PokeTrivia */;
 			targetProxy = 6AFBB2E82C0589B8002800C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -517,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PokeTrivia_ios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PokeTrivia/Preview Content\"";
 				DEVELOPMENT_TEAM = 86NLWSZ2AC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -546,7 +546,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PokeTrivia_ios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PokeTrivia/Preview Content\"";
 				DEVELOPMENT_TEAM = 86NLWSZ2AC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -584,7 +584,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeTrivia_ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokeTrivia_ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeTrivia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokeTrivia";
 			};
 			name = Debug;
 		};
@@ -604,7 +604,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeTrivia_ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokeTrivia_ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeTrivia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokeTrivia";
 			};
 			name = Release;
 		};
@@ -647,7 +647,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6AFBB2C82C0589B6002800C3 /* Build configuration list for PBXProject "PokeTrivia_ios" */ = {
+		6AFBB2C82C0589B6002800C3 /* Build configuration list for PBXProject "PokeTrivia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AFBB2EF2C0589B8002800C3 /* Debug */,
@@ -656,7 +656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AFBB2F12C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTrivia_ios" */ = {
+		6AFBB2F12C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTrivia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AFBB2F22C0589B8002800C3 /* Debug */,
@@ -665,7 +665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AFBB2F42C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTrivia_iosTests" */ = {
+		6AFBB2F42C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTriviaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AFBB2F52C0589B8002800C3 /* Debug */,
@@ -674,7 +674,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AFBB2F72C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTrivia_iosUITests" */ = {
+		6AFBB2F72C0589B8002800C3 /* Build configuration list for PBXNativeTarget "PokeTriviaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AFBB2F82C0589B8002800C3 /* Debug */,
