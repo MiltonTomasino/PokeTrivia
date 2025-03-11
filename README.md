@@ -1,6 +1,11 @@
 # PokeTrivia
 ## IOS app dedicated to Pokemon Trivia games
 ### This app is used for killing time and also providing as a database for basic information on some Pokemon anyone can access from an app on their phone.
+![menu](/images/menu.png)
+![grid](/images/grid.png)
+![quick](/images/quick.png)
+![dex](/images/dex.png)
+
 
 ## Retrieving Data 
 ### Website Data
